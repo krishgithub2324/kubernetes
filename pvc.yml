@@ -1,0 +1,11 @@
+apiversion: v1
+kind: persistentvolumeclaim
+metadata:
+  name: pvc-1
+spec:
+  storageclassname: local-storage
+  accessmodes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1gi
